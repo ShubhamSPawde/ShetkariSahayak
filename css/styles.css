@@ -11843,6 +11843,14 @@ i.fs-12 {
   padding-top: 120px;
   padding-bottom: 175px;
 }
+
+.s-crop-post {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 175px;
+}
+
+
 .s-blog-post.pb-44 {
   padding-bottom: 44px;
 }
