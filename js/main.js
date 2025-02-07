@@ -833,33 +833,3 @@ const resources = {
     },
 };
 
-
-
-i18next.init(
-    {
-        lng: localStorage.getItem("preferredLanguage") || "en", // Default language
-        debug: true,
-        resources: resources,
-    },
-    (err, t) => {
-        if (err) return console.error(err);
-        updateContent();
-    }
-);
-
-// Function to update all translatable content
-function updateContent() {
-    document.querySelectorAll("[data-i18n]").forEach((element) => {
-        const key = element.getAttribute("data-i18n");
-        element.textContent = i18next.t(key);
-    });
-}
-
-// Handle language selection
-function changeLanguage(language) {
-    i18next.changeLanguage(language, (err) => {
-        if (err) return console.error(err);
-        localStorage.setItem("preferredLanguage", language);
-        updateContent();
-    });
-}
