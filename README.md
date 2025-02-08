@@ -15,7 +15,7 @@ Shetkari Sahayak is an AI-powered crop disease detection system that helps farme
 - **Preprocessing**: PIL, NumPy, Pandas
 - **Deep Learning Model**: ResNet-50 (TensorFlow, Keras, PyTorch)
 - **Backend**: Flask, MongoDB
-- **Frontend**: React.js, Tailwind CSS
+- **Frontend**: HTML, CSS
 - **Deployment**: AWS
 <!--
 ## 📌 Installation & Setup
